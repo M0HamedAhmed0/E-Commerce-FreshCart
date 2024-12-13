@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-green {
+        @apply text-white text-lg bg-[#4fa74f] hover:bg-[#3fa43f] focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+    }
+    .btn-sky {
+        @apply text-white text-lg bg-[#0dcaf0] hover:bg-[#0dcaf0] focus:ring-4 focus:outline-none focus:ring-[#0dcaf0] font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center;
+    }
+}
+.active {
+    @apply opacity-100;
+}
+.card:hover .btn-up {
+    @apply translate-y-0 transition-transform opacity-100 duration-500 relative z-10;
+}
+
+@layer utilities {
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-slide-down {
+        animation: slideDown 0.5s ease-in-out;
+    }
+}
