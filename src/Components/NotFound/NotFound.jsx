@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function NotFound() {
     return (
         <>
+            <HelmetProvider>
+                <Helmet>
+                    <title>Not Found Page</title>
+                </Helmet>
+            </HelmetProvider>
             <Navbar />
             <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
                 <h1 className="text-9xl font-bold text-green-500 mb-6">404</h1>
@@ -11,7 +17,7 @@ export default function NotFound() {
                     Page Not Found
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                    Sorry, the page you're looking for doesn't exist.
+                    Sorry, the page you&apos;re looking for doesn&apos;t exist.
                 </p>
                 <Link
                     to="/home"

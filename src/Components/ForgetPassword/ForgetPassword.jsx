@@ -42,7 +42,7 @@ export default function ForgetPassword() {
             </HelmetProvider>
             <form
                 onSubmit={formik.handleSubmit}
-                className="container max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto mt-16 px-5 md:px-0"
+                className="container max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto mt-32 px-5 md:px-0"
             >
                 <h2 className="text-4xl font-normal text-black my-5">
                     Please Enter Your Email

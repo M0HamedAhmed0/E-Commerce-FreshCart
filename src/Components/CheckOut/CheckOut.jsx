@@ -41,7 +41,7 @@ export default function CheckOut() {
         try {
             setIsLoading(true);
             const { data } = await axios.post(
-                `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${param.id}?url=http://localhost:5173`,
+                `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${param.id}?url=${window.location.origin}`,
                 { shippingAddress: values },
                 {
                     headers: {
@@ -78,7 +78,7 @@ export default function CheckOut() {
             </HelmetProvider>
             <form
                 onSubmit={formik.handleSubmit}
-                className="container max-w-[400px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto mt-16"
+                className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto mt-32"
             >
                 <div className="mb-5">
                     <label

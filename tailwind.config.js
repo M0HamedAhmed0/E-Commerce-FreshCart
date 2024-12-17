@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import flowbitePlugin from 'flowbite/plugin';
+
 export default {
   content: [
     "./index.html",
@@ -8,11 +10,11 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-      'shadow-green': '1px 1px 10px #4fa74f',
+        'shadow-green': '1px 1px 10px #4fa74f',
       },
     },
   },
   plugins: [
-    require('flowbite/plugin')
-],
-}
+    flowbitePlugin,
+  ],
+};

@@ -136,7 +136,7 @@ export default function ProductDetails() {
             </HelmetProvider>
             <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-center p-4 md:py-4 md:px-0">
                 {productDetails ? (
-                    <div className="product flex flex-col md:flex-row items-center my-5 w-full">
+                    <div className="product flex flex-col md:flex-row items-center my-28 w-full">
                         <div className="product-image w-full md:w-2/4">
                             <div className="slider-container max-w-screen-xl mx-auto">
                                 <Slider {...settings} ref={sliderRef}>

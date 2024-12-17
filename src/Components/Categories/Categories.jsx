@@ -35,8 +35,8 @@ export default function Categories() {
                 </Helmet>
             </HelmetProvider>
             <section>
-                <div className="container max-w-[400px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0">
-                    <div className="row grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 my-5">
+                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-28 md:px-0">
+                    <div className="row grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 my-5 m-auto md:w-full">
                         {categories.map((item) => (
                             <div
                                 key={item._id}

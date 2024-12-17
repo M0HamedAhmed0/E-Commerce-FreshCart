@@ -129,7 +129,7 @@ export default function Cart() {
     if (!cartData) {
         return (
             <>
-                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0 my-10 bg-slate-50 border-gray-200 rounded-lg">
+                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between p-4 md:px-0 my-28 bg-slate-50 border-gray-200 rounded-lg">
                     <div className="cart p-5 lg:p-8 w-full">
                         <div className="flex flex-col mb-6">
                             <h1 className="text-[32px] font-medium ">
@@ -153,7 +153,7 @@ export default function Cart() {
                 </Helmet>
             </HelmetProvider>
             <section>
-                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0 my-10 bg-slate-50 border-gray-200 rounded-lg">
+                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between p-4 md:px-0 my-28 bg-slate-50 border-gray-200 rounded-lg">
                     <div className="cart p-5 lg:p-10 w-full">
                         <div className="flex items-center justify-between mb-6">
                             <h1 className="text-[32px] font-medium">

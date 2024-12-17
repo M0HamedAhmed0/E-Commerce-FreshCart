@@ -31,7 +31,7 @@ export default function SubCategories({ categoryId, categoryName }) {
         <>
             {subcategories.length > 0 && (
                 <section>
-                    <div className="container max-w-[360px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0">
+                    <div className="container max-w-[400px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0">
                         <div className="flex flex-col w-full">
                             <h2 className="title text-center p-4 text-[#198754] font-medium text-[28px]">
                                 {categoryName} Subcategories

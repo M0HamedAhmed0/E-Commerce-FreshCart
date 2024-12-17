@@ -134,7 +134,7 @@ export default function Home() {
             <CategoriesSlider />
 
             <section>
-                <div className="container max-w-[400px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0">
+                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between p-4 md:px-0">
                     <form className="w-4/5 mx-auto my-8">
                         <label
                             htmlFor="default-search"
@@ -170,7 +170,7 @@ export default function Home() {
                             />
                         </div>
                     </form>
-                    <div className="row grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-y-12 my-12">
+                    <div className="row grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-y-12 my-12 m-auto">
                         {products.length == 0
                             ? null
                             : searchItem.map((product, index) => (

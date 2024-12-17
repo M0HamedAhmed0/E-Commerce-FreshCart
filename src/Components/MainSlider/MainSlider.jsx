@@ -72,7 +72,7 @@ export default function MainSlider() {
     const handlePrev2 = () => sliderRef2.current.slickPrev();
 
     return (
-        <div className="container max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto my-9 py-4 md:px-0">
+        <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-28 md:px-0">
             <div className="row flex m-auto justify-center items-center md:items-stretch flex-col md:flex-row gap-5 md:gap-0 w-3/5">
                 <div className="imageLeft w-10/12  md:w-[40%]">
                     <Slider {...settings2} ref={sliderRef2}>

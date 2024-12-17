@@ -85,6 +85,7 @@ export default function WishList() {
                 },
             });
             setCountItem(data.numOfCartItems);
+            removeItemFromWishList(itemId);
         } catch (error) {
             toast.error(
                 "Error adding item to cart. Please try again later." + error
@@ -113,7 +114,7 @@ export default function WishList() {
             </HelmetProvider>
 
             <section>
-                <div className="container max-w-[400px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between py-4 md:px-0 my-10 bg-slate-50 border-gray-200 rounded-lg">
+                <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between p-4 md:px-0 my-28 bg-slate-50 border-gray-200 rounded-lg">
                     <div className="wishList p-5 lg:p-10 w-full">
                         <h1 className="text-[32px] font-medium text-[#212529]">
                             My Wish List

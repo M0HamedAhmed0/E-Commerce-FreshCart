@@ -124,6 +124,7 @@ function App() {
             element: <NotFound />,
         },
     ]);
+
     return (
         <>
             <UserContextProvider>

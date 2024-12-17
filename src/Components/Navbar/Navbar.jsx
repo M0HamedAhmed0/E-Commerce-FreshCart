@@ -16,7 +16,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="bg-slate-50 border-gray-200 dark:bg-gray-900">
+        <nav className="bg-slate-50 border-gray-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-50">
             <div className="container sm:max-w-[600px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex flex-wrap items-center justify-between p-4 md:px-0">
                 <NavLink
                     to="/home"
